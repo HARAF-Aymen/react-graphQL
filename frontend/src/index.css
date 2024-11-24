@@ -1,0 +1,200 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  background-color: #fdf6e4; /* Soft beige background */
+  color: #4f3824; /* Dark brown text */
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* App Container */
+.App {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: #fffdf5; /* Light cream background for forms and cards */
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff6f61, #ff8a73); /* Vibrant orange gradient */
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Flex Container for Form and List */
+.account-list-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between;
+}
+
+/* Forms */
+form {
+  flex: 1;
+  max-width: 400px;
+  background: #fffdf5; /* Light cream background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the form */
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #ff6f61; /* Deep orange for headings */
+}
+
+form input,
+form select,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #ff6f61; /* Deep orange for focus states */
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+}
+
+form button {
+  background: #388e3c; /* Deep green for buttons */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background: #2b5d2b; /* Darker green for hover */
+}
+
+/* Account List */
+.account-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+}
+
+.account-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #ff6f61; /* Deep orange for headings */
+}
+
+/* Filter */
+.filter {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filter select {
+  max-width: 300px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+  background: #388e3c; /* Deep green for table header */
+  color: white;
+}
+
+table th,
+table td {
+  padding: 12px 20px;
+  text-align: center;
+}
+
+table tbody tr:nth-child(odd) {
+  background: #fffdf5; /* Light cream for odd rows */
+}
+
+table tbody tr:hover {
+  background: #f8eee4; /* Subtle hover effect */
+}
+
+/* Buttons */
+button {
+  background: #388e3c; /* Deep green for buttons */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #2b5d2b; /* Darker green for hover */
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .account-list-container {
+    flex-direction: column;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  table th,
+  table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
